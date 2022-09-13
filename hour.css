@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border: 10px solid rgb(238, 8, 27);
+    border-radius: 50%;
+    background: url(https://www.kindpng.com/picc/m/171-1717365_jam-png-4-png-image-6-clock.png	 ) center;
+    background-repeat: no-repeat;
+    background-size: 98%;
+	box-shadow: 0 0 2px 4px rgb(165, 19, 9), inset 0 0 50px rgb(61, 50, 50);
+	
+	
+}
+
+.secs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 12rem;
+    width: .1rem;
+    background-color: rgb(223, 103, 23);
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+	transform: rotate(180deg);
+}
+
+.mins {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 9rem;
+    width: .3rem;
+    border-radius: 20px;
+    background-color: black;
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+	transform: rotate(180deg);
+}
+
+.hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 7rem;
+    width: .5rem;
+    background-color: black;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    transform-origin: 50% 0;
+	transform: rotate(180deg);
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    transform: translateX(-50%);
+}
